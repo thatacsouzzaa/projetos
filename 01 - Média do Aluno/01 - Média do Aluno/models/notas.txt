@@ -1,0 +1,8 @@
+Thaina;5.0;10.0;9.0;
+Thaina;10.0;5.0;8.0;
+Thaina;10.0;5.0;3.0;6.0;Aprovado
+Thaina;10.0;5.0;7.0;7.333333333333333;Aprovado
+ROB;5.0;3.0;2.0;3.3333333333333335;Reprovado
+eu;3.0;7.0;2.0;4.0;Reprovado
+eu;10.0;2.0;7.0;6.333333333333333;Aprovado
+Thaina;1.0;7.0;9.0;6e+00;Reprovado

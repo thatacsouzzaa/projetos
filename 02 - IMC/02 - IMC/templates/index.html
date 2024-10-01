@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="static/styles/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Calculadora - IMC </h1>
+    <div class="calc_imc">
+        <form action="/" method="POST" class="cad_imc_formulario">
+            
+            <label for="altura">Sua Altura em metros: </label>
+            <input type="number" name="altura" id="altura" required step="0.01"> 
+            <i class="fa-solid fa-ruler"></i>
+
+            <label for="peso">Seu Peso em kg: </label>
+            <input type="number" name="peso" id="peso" required step="0.1">
+            <i class="fa-solid fa-weight-hanging"></i>
+
+            <div>
+                <button type="submit" class="imc_calcular">Calcular IMC</button>
+            </div>
+                {% if resultado is not none %}
+                <div id="resultados">
+                    <div id="imc">
+                        <span id="value">Seu IMC: {{ resultado }} </span>
+                    </div>
+                    <div id="descrição">
+                        <span>Descrição do IMC: {{ condicao }} </span>
+                    </div>
+                </div>
+                <div id="mais_info">
+                    <a href="https://www.saudebemestar.pt/pt/blog/nutricao/imc/">Mais informações sobre o IMC</a>
+                    <i class="fa-solid fa-link"></i>
+                </div>
+                {% endif %} 
+        </form>
+       
+    </div>
+    </div>
+</body>
+</html>
+

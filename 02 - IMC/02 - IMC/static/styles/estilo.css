@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --font-primaria: "MontSerrat", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #282828;
+    display:flow-root;
+    align-items:center;
+    justify-content: center;
+    width:100%
+}
+.calc_imc{
+    align-items: center;
+    gap: 3.5px;
+}
+h1{
+    font-size: 35px;
+    font-family: var(--font-primaria);
+    text-align: center;
+    margin-top: 60px;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.cad_imc_formulario {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: white;
+    font-family: var(--font-primaria);
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    width: 400px;
+    height: 450px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cad_imc_formulario input {
+    width: 50%;  /* Ajusta a largura das caixas de entrada */
+    padding: 5px;  /* Adiciona espaço interno */
+    margin-bottom: 15px;  /* Espaço abaixo de cada caixa */
+    border: 1px solid #ccc;  /* Borda leve */
+    border-radius: 4px;  /* Bordas arredondadas */
+    font-size: 16px;  /* Tamanho da fonte */
+}
+i{
+    text-align: end;
+}
+
+.imc_calcular{
+    font-size: 20px;
+    font-family: var(--font-primaria);
+    background-color:#ffffff;
+    padding: 7px 30px;
+    border-radius: 20px;
+    border-radius: 0.5x solid black;
+    cursor:pointer;
+    margin-top: 10px;
+    font-weight: 600;
+    display: center;
+}
+.imc_calcular :hover{
+        background-color: #686161;
+}
+

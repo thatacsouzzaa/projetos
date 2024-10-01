@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Aluno - Consulta</title>
+    <link rel="stylesheet" href="/static/styles/estiloconsulta.css">
+</head>
+
+<body>
+    <nav>
+        <header>
+            <a  href="/">Sistema de Notas</a>
+        |
+            <a href="/consulta">Consulta de Notas</a>
+        </header>
+    </nav>
+    <div class="consulta_alunos">
+        <h2>Consulta Notas</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Nome do Aluno</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Média</th>
+                    <th>Status</th>
+                </tr>
+                {% for alu in aluno%}
+                <tr>
+                    <td>{{ alu.nome_aluno }}</td>
+                    <td>{{ alu.nota_1 }}</td>
+                    <td>{{ alu.nota_2 }}</td>
+                    <td>{{ alu.nota_3 }}</td> 
+                    <td>{{ alu.media }}</td>
+                    <td>{{ alu.status }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

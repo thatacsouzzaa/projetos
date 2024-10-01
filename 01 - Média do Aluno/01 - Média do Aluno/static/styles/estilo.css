@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --font-primaria:"Montserrat", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: f4f4f4;
+}
+
+header{ 
+    background-color: #D9D9D9;
+    padding: 15px;
+    text-align: center;
+    width: 1500px;
+}
+
+nav{
+    display: inline-block;
+}
+
+nav a{
+    justify-content: center;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--font-primaria);
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+}
+
+.titulo{
+    font-size: 35px;
+    font-family: var(--font-primaria);
+    position: center;
+    margin-top: 60px;
+    font-family: var(--font-primaria);
+    padding: 15px;
+
+}
+.cad_notas{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+}
+.cad_aluno_formulario{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: white;
+    font-family: var(--font-primaria);
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px #D9D9D9;
+    width: 500px;
+    height: 400px;
+    max-width: 600px ;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.cad_aluno_formulario h2{
+    margin-bottom: 40px;
+}
+.cad_aluno_formulario input[type="text"]:hover{
+    background-color: white;
+}
+.cad_aluno_formulario input[type="text"]:focus{
+    background-color:white ;
+}
+.cad_alunos_lancar{
+    font-size: 20px;
+    font-family: var(--font-primaria);
+    background-color:#ffffff;
+    padding: 10px 40px;
+    border-radius: 20px;
+    border-radius: 0.5x solid black;
+    cursor:pointer;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.cad_alunos_lancar:hover{
+    background-color: #D9D9D9;
+}
+
